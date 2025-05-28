@@ -1,23 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Molik Verma - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-    header { background: #333; color: white; padding: 1rem 2rem; text-align: center; }
-    nav a { color: white; margin: 0 1rem; text-decoration: none; }
-    section { padding: 2rem; max-width: 800px; margin: auto; }
-    h2 { color: #444; }
-    .projects a { display: inline-block; margin: 0.5rem 0; color: #0066cc; }
-    footer { background: #333; color: white; text-align: center; padding: 1rem; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #bbdefb);
+      color: #1a237e;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #0d47a1, #1976d2);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #82b1ff;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #0d47a1;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-box {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    }
+
+    .projects a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #1976d2;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .projects a:hover {
+      background-color: #1565c0;
+    }
+
+    a {
+      color: #0d47a1;
+    }
+
+    footer {
+      background: linear-gradient(to right, #0d47a1, #1976d2);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>MOLIK VERMA</h1>
-    <p>Web Developer</p>
+    <h1>Molik Verma</h1>
+    <p>Web Developer & Digital Marketing Expert</p>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -27,23 +134,32 @@
 
   <section id="about">
     <h2>About Me</h2>
-   <p>
-  I’m a passionate web developer and digital marketing expert dedicated to creating seamless, user-friendly websites that drive results.
-  With a strong blend of technical skills and marketing insight, I craft tailored digital solutions that boost brand visibility and engagement.
-  I thrive on turning ideas into impactful online experiences that help businesses grow and succeed.
-</p>
+    <p>
+      I’m a passionate web developer and digital marketing expert dedicated to building seamless, user-friendly websites that drive real results.
+      With a unique blend of technical skill and marketing insight, I create tailored solutions that help brands grow, engage, and succeed in the digital world.
+    </p>
   </section>
 
   <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <p>Below are some Projects completed for clients<p>
-    <p><strong>Project One:</strong> Fully Functional and Interactive website created for Coal Harbour Mechanical.<a href="https://coalharbourmechanical.com/">Click Here to Visit</a></p>
-    <p><strong>Project Two:</strong> Interactive Website Created with Ecommerce Asspect for Budget Battery Repair. <a href="https://budgetbatteryrepair.com/">Click Here to Visit</a></p>
+    <h2>Featured Projects</h2>
+
+    <div class="project-box">
+      <p><strong>Coal Harbour Mechanical</strong></p>
+      <p>A fully functional, interactive website built for an HVAC company focused on professionalism and usability.</p>
+      <a href="https://coalharbourmechanical.com/" target="_blank">Visit Project</a>
+    </div>
+
+    <div class="project-box">
+      <p><strong>Budget Battery Repair</strong></p>
+      <p>An interactive ecommerce website created to help a battery repair company manage products and engage customers effectively.</p>
+      <a href="https://budgetbatteryrepair.com/" target="_blank">Visit Project</a>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: Molikverma16@gmail.com</p>
+    <p>Have a project idea or collaboration in mind? I'd love to hear from you!</p>
+    <p><strong>Email:</strong> <a href="mailto:Molikverma16@gmail.com">Molikverma16@gmail.com</a></p>
   </section>
 
   <footer>
