@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Molik Verma - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -14,108 +13,122 @@
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #e3f2fd, #bbdefb);
-      color: #1a237e;
-      line-height: 1.6;
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.8;
     }
 
     header {
-      background: linear-gradient(to right, #0d47a1, #1976d2);
+      background: linear-gradient(to right, #1e3c72, #2a5298);
       color: white;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
 
     header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.3rem;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
     }
 
     header p {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
     }
 
     nav a {
       color: white;
-      margin: 0 1rem;
+      margin: 0 1.2rem;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       transition: color 0.3s ease;
     }
 
     nav a:hover {
-      color: #82b1ff;
+      color: #ffd54f;
     }
 
     section {
-      padding: 3rem 1rem;
-      max-width: 1000px;
+      padding: 4rem 1rem;
+      max-width: 1100px;
       margin: auto;
     }
 
     h2 {
-      font-size: 2rem;
-      color: #0d47a1;
-      margin-bottom: 1rem;
+      font-size: 2.2rem;
+      color: #1e3c72;
+      margin-bottom: 1.5rem;
+      border-left: 6px solid #2a5298;
+      padding-left: 1rem;
     }
 
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
+    .about p, .contact p {
+      font-size: 1.15rem;
+      margin-bottom: 1.2rem;
     }
 
     .project-box {
       background: white;
-      padding: 1.5rem;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      margin-bottom: 2rem;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+      margin-bottom: 2.5rem;
+      transition: all 0.4s ease;
     }
 
     .project-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+
+    .project-box strong {
+      font-size: 1.3rem;
+      color: #2a5298;
     }
 
     .projects a {
       display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      background-color: #1976d2;
+      margin-top: 0.8rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #2a5298;
       color: white;
-      border-radius: 8px;
+      border-radius: 10px;
       text-decoration: none;
+      font-weight: 600;
       transition: background-color 0.3s;
     }
 
     .projects a:hover {
-      background-color: #1565c0;
-    }
-
-    a {
-      color: #0d47a1;
+      background-color: #1e3c72;
     }
 
     footer {
-      background: linear-gradient(to right, #0d47a1, #1976d2);
+      background: #1e3c72;
       color: white;
       text-align: center;
-      padding: 1.5rem;
-      margin-top: 3rem;
+      padding: 2rem;
+      font-size: 0.95rem;
+      margin-top: 4rem;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       header h1 {
-        font-size: 2rem;
+        font-size: 2.4rem;
       }
 
       nav a {
         display: block;
-        margin: 0.5rem 0;
+        margin: 0.6rem 0;
+      }
+
+      .project-box {
+        padding: 1.5rem;
       }
     }
   </style>
@@ -132,11 +145,13 @@
     </nav>
   </header>
 
-  <section id="about">
+  <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      I’m a passionate web developer and digital marketing expert dedicated to building seamless, user-friendly websites that drive real results.
-      With a unique blend of technical skill and marketing insight, I create tailored solutions that help brands grow, engage, and succeed in the digital world.
+      Hello! I'm Molik, a dynamic web developer and digital marketer with a passion for building elegant, high-performing websites. With a strong background in both design and strategy, I help businesses grow their online presence through visually stunning and conversion-optimized experiences.
+    </p>
+    <p>
+      Whether it's a responsive business website or a data-driven marketing campaign, I bring energy, precision, and creativity to every project.
     </p>
   </section>
 
@@ -145,20 +160,20 @@
 
     <div class="project-box">
       <p><strong>Coal Harbour Mechanical</strong></p>
-      <p>A fully functional, interactive website built for an HVAC company focused on professionalism and usability.</p>
+      <p>An intuitive and fully responsive website built for an HVAC company, emphasizing clean design and usability for enhanced client engagement.</p>
       <a href="https://coalharbourmechanical.com/" target="_blank">Visit Project</a>
     </div>
 
     <div class="project-box">
       <p><strong>Budget Battery Repair</strong></p>
-      <p>An interactive ecommerce website created to help a battery repair company manage products and engage customers effectively.</p>
+      <p>A robust ecommerce platform designed to help a battery repair company manage inventory and streamline the customer experience.</p>
       <a href="https://budgetbatteryrepair.com/" target="_blank">Visit Project</a>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Have a project idea or collaboration in mind? I'd love to hear from you!</p>
+    <p>Got an idea, project, or opportunity you'd like to discuss? I'm just an email away.</p>
     <p><strong>Email:</strong> <a href="mailto:Molikverma16@gmail.com">Molikverma16@gmail.com</a></p>
   </section>
 
@@ -167,3 +182,4 @@
   </footer>
 </body>
 </html>
+
